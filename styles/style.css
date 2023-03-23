@@ -1,0 +1,145 @@
+:root{
+    --navBg: #141414;
+    --lightBg: #f5f5f5;
+    --black: #000;
+    --white: #fff;
+    --lightText: #bdbdbd;
+    --semiLight: #7d7d7d;
+    --logoColor: #6831ff;
+    --gold: #ffd700;
+}
+
+html, body, main, section{
+    height: 100%;
+}
+
+body{
+    padding: 1em 7em;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+nav > div:nth-child(1) a{
+    font-size: 2.3rem;
+}
+
+.nav-icon{
+    font-size: 24pt;
+    color: var(--logoColor);
+}
+
+nav > div:nth-child(2) a{
+    font-size: 1.3rem;
+
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+}
+
+.new-icon{
+    color: #00d600;
+}
+
+.list-icon{
+    color: rgb(236, 236, 0);
+}
+
+section{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div{
+    width: 25%;
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-card{
+    padding: 1em;
+    border: 1px solid var(--lightBg);
+}
+
+.product-image{
+    flex: 3;
+    width: 100%;
+    background: #868686;
+}
+
+.product-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-content{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-content div:nth-child(1),
+.product-content div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product-name,
+.product-price{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 0.5em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product-name{
+    flex: 4;
+}
+
+.product-price{
+    flex: 1;
+}
+
+.product-content div:nth-child(2) a{
+    font-size: 1.1rem;
+
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-icon{
+    font-size: 1.3rem;
+    color: #00d600;
+}
+
+.delete-icon{
+    font-size: 1.3rem;
+    color: #ff0000;
+}
